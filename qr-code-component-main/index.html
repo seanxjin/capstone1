@@ -1,28 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | QR code component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+            position: absolute;
+            top: 505px;
+            left: 575px;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+
+        html {
+            font-family: "Outfit", sans-serif;
+            background-color: hsl(212, 45%, 89%);
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        #title {
+            color: hsl(218, 44%, 22%);
+            font-weight: 700;
+            font-size: 1.25rem;
+            margin-bottom: 20px;
+        }
+
+        #info {
+            font-weight: 400;
+            font-size: 1.05rem;
+            color: hsl(216, 15%, 48%);
+        }
+
+        #QR-div {
+            background-color: white;
+            width: 350px;
+            height: 475px;
+            position: absolute;
+            left: 508px;
+            top: 25px;
+            border-radius: 5%;
+        }
+
+        img[src="./images/image-qr-code.png"] {
+            border-radius: 5%;
+            height: 300px;
+            width: 300px;
+            margin: 0;
+            position: absolute;
+            top: 20px;
+            left: 25px;
+        }
+
+        #text {
+            height: auto;
+            width: 300px;
+            position: absolute;
+            left: 25px;
+            top: 330px;
+        }
+
+        .entirety {
+            position: relative;
+
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  Improve your front-end skills by building projects
+    <div class="entirety">
+        <div id="QR-div">
+            <img src="./images/image-qr-code.png" alt="QR Code">
+            <div id="text">
+                <p id="title">Improve your front-end skills by building projects</p>
+                <p id="info">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+            </div>
+        </div>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="#">Sean</a>.
+        </div>
+    </div>
 
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
+
+
+
+
+
 </body>
+
 </html>
